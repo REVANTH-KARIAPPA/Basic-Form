@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="" method="get">
+            <h1>Course Registration</h1>
+            <div class="input-control">
+                <label for="Firstname">Firstname</label>
+                <input id="Firstname" name="Firstname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Lastname">Lastname</label>
+                <input id="Lastname" name="Lastname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="course">Course</label>
+                    <select name="course" id="course">
+                          <option value="java">java</option>
+                          <option value="html">html</option>
+                          <option value="javascript">javascript</option>
+                          <option value="css">css</option>
+                    </select>
+            </div>
+        
+        <div class="input-control">
+            <label for="mode">Class Mode</label>
+            <input type="radio" name="mode" id="mode" value="online">Online 
+            <input type="radio" name="mode" id="mode" value="offline">Offline
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="lang">Choose the programming language you know </label>
+             <input type="checkbox" name="lang" id="lang" value="java">Java
+             <input type="checkbox" name="lang" id="lang" value="python">python
+             <input type="checkbox" name="lang" id="lang" value="c">c
+             <input type="checkbox" name="lang" id="lang" value="javascript">javascript
+             <div class="error"></div>
+        </div>
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
